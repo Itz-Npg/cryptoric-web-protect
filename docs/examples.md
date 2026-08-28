@@ -1,4 +1,4 @@
-# Examples
+# Examples.
 
 Here is how you can implement Cryptoric Web Protect across various popular frameworks.
 
