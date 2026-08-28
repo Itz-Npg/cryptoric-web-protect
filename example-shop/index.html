@@ -1,0 +1,134 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cryptoric Store - Protected Example</title>
+    <style>
+        :root {
+            --bg: #09090b;
+            --surface: #18181b;
+            --primary: #00e5ff;
+            --text: #f8fafc;
+            --text-muted: #a1a1aa;
+        }
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: var(--bg);
+            color: var(--text);
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+        header {
+            background-color: var(--surface);
+            padding: 1rem 5%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 1px solid rgba(255,255,255,0.1);
+        }
+        .logo { font-size: 1.5rem; font-weight: bold; color: var(--primary); }
+        .nav-links a { color: var(--text); text-decoration: none; margin-left: 2rem; transition: color 0.2s; }
+        .nav-links a:hover { color: var(--primary); }
+        
+        main { padding: 4rem 5%; max-width: 1200px; margin: 0 auto; }
+        .hero { text-align: center; margin-bottom: 4rem; }
+        .hero h1 { font-size: 3rem; margin-bottom: 1rem; }
+        .hero p { color: var(--text-muted); font-size: 1.2rem; max-width: 600px; margin: 0 auto; }
+        
+        .products {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+        .product-card {
+            background-color: var(--surface);
+            border-radius: 12px;
+            padding: 2rem;
+            text-align: center;
+            border: 1px solid rgba(255,255,255,0.05);
+            transition: transform 0.2s;
+        }
+        .product-card:hover { transform: translateY(-5px); border-color: rgba(0, 229, 255, 0.3); }
+        .price { font-size: 1.5rem; font-weight: bold; color: var(--primary); margin: 1rem 0; }
+        .buy-btn {
+            background-color: var(--primary);
+            color: #000;
+            border: none;
+            padding: 0.8rem 2rem;
+            border-radius: 8px;
+            font-weight: bold;
+            cursor: pointer;
+            width: 100%;
+            transition: opacity 0.2s;
+        }
+        .buy-btn:hover { opacity: 0.9; }
+
+        .protection-banner {
+            background: rgba(239, 68, 68, 0.1);
+            color: #ef4444;
+            text-align: center;
+            padding: 1rem;
+            margin-bottom: 2rem;
+            border-radius: 8px;
+            border: 1px solid rgba(239, 68, 68, 0.3);
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="logo">Cryptoric Store</div>
+        <div class="nav-links">
+            <a href="#">Products</a>
+            <a href="#">About</a>
+            <a href="#">Login</a>
+        </div>
+    </header>
+
+    <main>
+        <div class="protection-banner">
+            🛡️ This store is fully secured by Cryptoric Web Protect. Try to open DevTools!
+        </div>
+
+        <div class="hero">
+            <h1>Premium Digital Assets</h1>
+            <p>Purchase high-quality digital products instantly. Secured against theft and reverse-engineering.</p>
+        </div>
+
+        <div class="products">
+            <div class="product-card">
+                <h3>V69 Deobfuscator Tool</h3>
+                <p style="color: var(--text-muted)">Unpack and deobfuscate protected Lua scripts with a single click.</p>
+                <div class="price">$29.99</div>
+                <button class="buy-btn">Add to Cart</button>
+            </div>
+            
+            <div class="product-card">
+                <h3>Cryptoric Auth v2</h3>
+                <p style="color: var(--text-muted)">The ultimate licensing and authentication system for your software.</p>
+                <div class="price">$49.99</div>
+                <button class="buy-btn">Add to Cart</button>
+            </div>
+
+            <div class="product-card">
+                <h3>Silent Aim Loader</h3>
+                <p style="color: var(--text-muted)">Securely inject and stream files directly into memory.</p>
+                <div class="price">$19.99</div>
+                <button class="buy-btn">Add to Cart</button>
+            </div>
+        </div>
+    </main>
+
+    <!-- Load the Protection Script locally for this example -->
+    <script src="../cryptoric-web-protect.js"></script>
+    <script>
+        // Initialize the protection!
+        if (window.CryptoricProtect) {
+            window.CryptoricProtect.init();
+        }
+    </script>
+</body>
+</html>
