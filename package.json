@@ -1,25 +1,25 @@
 {
-    "name":  "cryptoric-web-protect",
-    "version":  "1.0.0",
-    "description":  "High-performance, anti-DevTools script with a Dual-Class CSS Dead-Man\u0027s Switch.",
-    "main":  "cryptoric-web-protect.js",
-    "scripts":  {
-                    "test":  "echo \"Error: no test specified\" \u0026\u0026 exit 1",
-                    "docs:dev":  "vitepress dev docs",
-                    "docs:build":  "vitepress build docs",
-                    "docs:preview":  "vitepress preview docs"
-                },
-    "keywords":  [
-                     "security",
-                     "anti-inspect",
-                     "devtools",
-                     "protect",
-                     "obfuscation"
-                 ],
-    "author":  "Cryptoric",
-    "license":  "MIT",
-    "devDependencies":  {
-                            "vitepress":  "^1.6.4",
-                            "vue":  "^3.5.42"
-                        }
+    "name": "cryptoric-web-protect",
+    "version": "1.0.1",
+    "description": "High-performance, anti-DevTools script with a Dual-Class CSS Dead-Man's Switch.",
+    "main": "cryptoric-web-protect.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "docs:dev": "vitepress dev docs",
+        "docs:build": "vitepress build docs",
+        "docs:preview": "vitepress preview docs"
+    },
+    "keywords": [
+        "security",
+        "anti-inspect",
+        "devtools",
+        "protect",
+        "obfuscation"
+    ],
+    "author": "Cryptoric",
+    "license": "MIT",
+    "devDependencies": {
+        "vitepress": "^1.6.4",
+        "vue": "^3.5.42"
+    }
 }
