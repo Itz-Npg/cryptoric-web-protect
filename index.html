@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cryptoric Web Protect - Demo</title>
+    <style>
+        body {
+            background-color: #09090b;
+            color: #f8fafc;
+            font-family: sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            flex-direction: column;
+            text-align: center;
+        }
+        .container {
+            background: rgba(24, 24, 27, 0.4);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            padding: 3rem;
+            border-radius: 12px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+            max-width: 600px;
+        }
+        h1 { color: #00e5ff; margin-top: 0; }
+        p { color: #a1a1aa; line-height: 1.6; }
+        .secret {
+            margin-top: 2rem;
+            padding: 1rem;
+            background: rgba(239, 68, 68, 0.1);
+            border: 1px solid rgba(239, 68, 68, 0.3);
+            border-radius: 8px;
+            color: #ef4444;
+            font-family: monospace;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Cryptoric Web Protect</h1>
+        <p>This page is heavily protected by our advanced anti-inspect script.</p>
+        <p>Try to open DevTools using F12, Right-Click, or Ctrl+Shift+I. If you manage to bypass that and use the Chrome menu to open DevTools, watch the page vanish as the Dead-Man's switch activates!</p>
+        
+        <div class="secret">
+            SECRET_API_KEY: CRYPTO-7X9B-1M2N-P3QZ
+            <br>
+            <span style="font-size: 0.8rem; color: #a1a1aa;">(If you are reading this in DevTools, you failed!)</span>
+        </div>
+    </div>
+
+    <!-- Include the protection script -->
+    <script src="cryptoric-web-protect.js"></script>
+</body>
+</html>
