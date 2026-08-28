@@ -1,4 +1,4 @@
-export default {
+﻿export default {
   base: '/cryptoric-web-protect/',
   title: "Cryptoric Web Protect",
   description: "Military-Grade Anti-DevTools & Web Protection Library",
@@ -25,8 +25,5 @@ export default {
     ],
     footer: {
       message: "Released under the MIT License.",
-      copyright: "Copyright � 2026-present Made by Npg/Aaditya"
-    }
-  },
-  appearance: "dark"
-}
+      copyright: "Copyright ï¿½ 2026-present NPG"
+
