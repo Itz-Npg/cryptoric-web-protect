@@ -25,5 +25,8 @@
     ],
     footer: {
       message: "Released under the MIT License.",
-      copyright: "Copyright ï¿½ 2026-present NPG"
-
+      copyright: "Copyright © 2026-present NPG"
+    }
+  },
+  appearance: "dark"
+}
