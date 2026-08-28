@@ -25,7 +25,7 @@ export default {
     ],
     footer: {
       message: "Released under the MIT License.",
-      copyright: "Copyright © 2026-present Cryptoric"
+      copyright: "Copyright ï¿½ 2026-present Made by Npg/Aaditya"
     }
   },
   appearance: "dark"
