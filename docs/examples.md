@@ -1,4 +1,4 @@
-# Examples.
+﻿# Examples.
 
 Here is how you can implement Cryptoric Web Protect across various popular frameworks.
 
@@ -50,3 +50,6 @@ export default function RootLayout({ children }) {
   );
 }
 ```
+
+### Full Website Example (Cryptoric Store)
+If you want to see a full, real-world implementation of the protection in a production-like environment, check out the \example-shop\ folder in our [GitHub Repository](https://github.com/Itz-Npg/cryptoric-web-protect). It contains a complete mock digital storefront with the protection script fully integrated!
