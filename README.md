@@ -11,7 +11,7 @@ Cryptoric Web Protect is a drop-in, zero-dependency JavaScript library designed 
 
 Install the package via NPM:
 
-`Bash
+`
 npm install cryptoric-web-protect
 `
 
